@@ -27,6 +27,7 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     border-bottom: 0.1rem solid var(--light-gray-color);
 }
 
@@ -74,4 +75,36 @@
 .menu ul li a:hover::after {
     width: 50%;
     left: 25%;
+}
+
+.intro-content {
+    position: relative;
+    top: -6rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content, .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.intro-text-content h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    line-height: 1.2;
+}
+
+.intro-text-content p {
+    text-transform: none;
+    font-family: 'Montserrat', italic;
+}
+.intro-img img, .intro-img svg {
+    max-width: 80%;
+    height: auto;
 }
