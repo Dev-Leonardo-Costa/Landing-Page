@@ -1,18 +1,22 @@
-* {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
     --primary-color: #0a1128;
     --white-color: white;
-    --secondary-color: crimson;
+    --secondary-color: #6C63FF;
     --light-gray-color: #EEEEEE;
     --gap: 3rem
 }
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /*
@@ -38,7 +42,7 @@ h1 {
 }
 
 h2 {
-    font-size:6rem;
+    font-size:5.7rem;
 }
 
 h3 {
