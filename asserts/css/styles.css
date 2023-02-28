@@ -15,6 +15,7 @@
 .white-bg {
     background: #4E47B7;
     color: var(--white-color);
+    max-height: 30rem;
 }
 
 .main-content {
@@ -24,7 +25,7 @@
 }
 
 .section {
-    min-height: 100vh;
+    min-height: 48vh;
 }
 
 .menu {
@@ -89,7 +90,7 @@
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: var(--gap);
-    height: 100vh;
+    height: 96vh;
 }
 
 .intro-text-content, .intro-img {
@@ -120,7 +121,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    height: 45vh;
     text-transform: initial;
     text-align: center;
 }
@@ -129,11 +130,11 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    height: 63vh;
     text-transform: uppercase;
 }
 
-.sev-h2 {
+.sevTitle {
     text-align: center;
     padding: 2rem;
 }
@@ -143,9 +144,8 @@ hr {
     height: 0.5rem;
     width: 7rem;
     background-color: #4E47B7;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     margin-left: 47%;
-
 }
 
 .somos-hr {
@@ -153,8 +153,8 @@ hr {
     height: 0.5rem;
     width: 7rem;
     background-color: white;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
     margin-left: 47%;
 }
 
@@ -176,15 +176,15 @@ hr {
     padding-bottom: 3rem;
 }
 
-.web-h3 {
+.webTitle {
     margin-left: 2rem;
 }
 
-.bi-h3 {
+.biTitle{
     margin-left: 5.5rem;
 }
 
-.api-h3 {
+.apiTitle {
     margin-left: 4rem;
 }
 
@@ -212,6 +212,30 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0.5rem 0.10rem 0 black;
+    box-shadow: 0 0.5rem 0.10rem 0 #4E47B7;
     cursor: pointer;
+}
+
+.fazemos {
+    margin-left: 41%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    right: 3rem;
+    bottom: 5rem;
+    width: 18rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: #665ceb;
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.5rem 0.10rem 0 #fefeff;
+}
+
+.fazemos:hover {
+    cursor: pointer;
+    background-color:#0A1128;
 }

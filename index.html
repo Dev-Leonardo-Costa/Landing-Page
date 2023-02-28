@@ -18,14 +18,16 @@
 <body class="main-bg">
   <aside class="menu">
     <div class="main-content menu-content">
-      <h1>
+      <h1 class="logo">
         <a href="#">LOGO</a>
       </h1>
       <nav>
-        <ul>
-          <li data-scroll-nav="1"><a href="#">Who we are</a></li>
-          <li data-scroll-nav="2"><a href="#">Services</a></li>
-          <li data-scroll-nav="3"><a href="#">Contact</a></li>
+        <ul class="langWrap">
+          <li data-scroll-nav="1"><a class="who" href="#">Who we are</a></li>
+          <li data-scroll-nav="2"><a class="service" href="#">Services</a></li>
+          <li data-scroll-nav="3"><a class="contact" href="#">Contact</a></li>
+          <li><a language="BRASIL" href="#"><img src="./asserts/img/brasil.png" alt="bandeira do brasil"></a></li>
+          <li><a language="EUA" href="#"><img src="./asserts/img/estados-unidos.png" alt="bandeira do estados unidos"></a></li>
         </ul>
       </nav>
     </div>
@@ -36,15 +38,14 @@
   <section data-scroll-index="0" class="intro main-bg section">
     <div class="main-content intro-content">
       <div class="intro-text-content">
-        <h2>CONNECTING PEOPLE AND BUSINESS</h2>
-        <p>
-          Criamos experiências digitais em plataformas móveis, Aplicações web
-          feitas sob medida para seu negócio, Indicadores eficientes baseados
-          nas melhores práticas do mercado, APIs leves e de alta performance
-          para transformar seu negócio.
+        <h2 class="titleOneSection">CONNECTING PEOPLE AND BUSINESS</h2>
+        <p class="subTitleOneSection">
+          We create digital experiences on mobile platforms,
+          web applications tailored to your business, 
+          efficient indicators based on best market practices,
+          lightweight and performance APIs to transform your business.
         </p>
       </div>
-
       <div class="intro-img">
         <img src="asserts/img/business.svg" alt="Logo fechando negocio com cliente" />
       </div>
@@ -53,45 +54,49 @@
 
   <section data-scroll-index="1" class="white-bg section">
     <div class="main-content temos-que-precisa-content">
-      <h2>Nós temos o que você precisa!</h2>
+      <h2 class="titleTwoSection">We have what you need!</h2>
       <hr class="somos-hr">
-      <p>
-        Somos especialistas em desenvolvimento de software sob medida para
-        negócios digitais, desenvolvendo soluções que criam oportunidades para
-        nossos clientes
+      <p class="subTitleTwoSection">
+        We are specialists in custom software development for
+        digital business, developing solutions that create opportunities for
+        our clients
       </p>
+      <a data-scroll-nav="2" class="fazemos" href="">o que fazemos</a>
     </div>
   </section>
+
   <section data-scroll-index="2" class="grid-one servico-bg section">
     <div class="main-content grid-one-content">
-      <h2 class="sev-h2">Service</h2>
+      <h2 class="sevTitle">Service</h2>
       <hr>
       <div class="grid">
         <article>
           <h3><img src="./asserts/img/aplicativo-movel.png" alt="serviços para mobile"></h3>
-          <h3>Mobile</h3>
-        <p>
-          Criamos experiências digitais em plataformas móveis
+          <h3 class="mobileTitle">Mobile</h3>
+        <p class="subTitleMobile">
+          We create digital experiences on mobile platforms
         </p>
       </article>
       <article>
         <h3><img src="./asserts/img/web.png" alt="serviços para web"></h3>
-        <h3 class="web-h3">web</h3>
-        <p>
-          Aplicações web feitas sob medida para seu negócio
+        <h3 class="webTitle">web</h3>
+        <p class="subWebTitle">
+          Tailor-made web applications for your business
         </p>
       </article>
       <article>
         <h3><img src="./asserts/img/online-analytical.png" alt="serviços para Bi dados"></h3>
-        <h3 class="bi-h3">bi</h3>
-        <p>
-          Indicadores eficientes baseados nas melhores práticas do mercado        </p>
-      </article>
+        <h3 class="biTitle">bi</h3>
+        <p class="subBiTitle">
+          Efficient indicators based on best market practices 
+        </p>       
+        </article>
       <article>
         <h3 api-h3><img src="./asserts/img/api.png" alt="serviços desenvolvimento de APIs"></h3>
-        <h3 class="api-h3">Api</h3>
-        <p>
-          APIs leves e de alta performance para transformar seu negócio        </p>
+        <h3 class="apiTitle">Api</h3>
+        <p class="subApiTitle">
+          Lightweight, high-performance APIs to transform your business       
+        </p>
       </article>
       </div>
     </div>
@@ -99,14 +104,11 @@
   </section>
 
   <a data-scroll-goto="0" class="top">TOP</a>
- 
+
   <Script src="./asserts/js/jquery.js"></Script>
   <script src="./asserts/js/scrolllt.min.js"></script>
-  <script>
-    $(function(){
-      $.scrollIt();
-    });
-  </script>
+  <script src="./asserts/js/fuctions/fuction.scroll.js"></script>
+  <script src="./asserts/js/fuctions/fuction.traducion.js"></script>
 </body>
 
 </html>
