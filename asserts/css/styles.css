@@ -239,3 +239,7 @@ hr {
     cursor: pointer;
     background-color:#0A1128;
 }
+
+.cursor-ban {
+    cursor: pointer;
+}

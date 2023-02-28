@@ -13,6 +13,9 @@ const subTitleMobile= document.querySelector('.subTitleMobile');
 const subWebTitle = document.querySelector('.subWebTitle');
 const subBiTitle = document.querySelector('.subBiTitle');
 const subApiTitle = document.querySelector('.subApiTitle');
+const fazemos = document.querySelector('.fazemos');
+
+
 
 link.forEach(el => {
     el.addEventListener('click', () => {
@@ -25,6 +28,7 @@ link.forEach(el => {
         contact.textContent = data[attr].contact;
         titleTwoSection.textContent = data[attr].titleTwoSection;
         subTitleTwoSection.textContent = data[attr].subTitleTwoSection;
+        fazemos.textContent = data[attr].fazemos;
 
         sevTitle.textContent = data[attr].sevTitle;
         subTitleMobile.textContent = data[attr].subTitleMobile;
@@ -46,7 +50,7 @@ var data = {
 
         "titleTwoSection": "Nós temos o que você precisa!",
         "subTitleTwoSection": "Somos especialistas em desenvolvimento de software sob medida para negócios digitais, desenvolvendo soluções que criam oportunidades para nossos clientes",
-        
+        "fazemos": "o que fazemos",
         "sevTitle": "serviço",
         "subTitleMobile":"Criamos experiências digitais em plataformas móveis",
         "subWebTitle":"Aplicações web sob medida para o seu negócio",
@@ -55,7 +59,7 @@ var data = {
     },
     "EUA": {
         "logo": "logo",
-        "who": "Quem nós somos",
+        "who": "who we are",
         "service": "Services",
         "contact": "Contact",
         "titleOneSection": "CONNECTING PEOPLE AND BUSINESS",
@@ -65,7 +69,8 @@ var data = {
         "titleTwoSection": "We have what you need!",
         "subTitleTwoSection": "We are specialists in custom software development for digital business, developing solutions that create opportunities for our clients",
         "sevTitle": "service",
-        
+        "fazemos": "what we do",
+
         "subTitleMobile":"We create digital experiences on mobile platforms",
         "subWebTitle":"Tailor-made web applications for your business",
         "subBiTitle":"Efficient indicators based on best market practices",
