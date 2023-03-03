@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="asserts/css/elements-var.css" />
 </head>
 
-<body class="main-bg">
+<body>
   <aside class="menu">
     <div class="main-content menu-content">
       <h1 class="logo">
@@ -94,7 +94,7 @@
           </p>
         </article>
         <article>
-          <h3 api-h3><img src="./asserts/img/api.png" alt="serviços desenvolvimento de APIs"></h3>
+          <h3 class="api-h3"><img src="./asserts/img/api.png" alt="serviços desenvolvimento de APIs"></h3>
           <h3 class="apiTitle">Api</h3>
           <p class="subApiTitle">
             Lightweight, high-performance APIs to transform your business
@@ -104,6 +104,52 @@
     </div>
     </div>
   </section>
+  <section data-scroll-index="3" class="intro main-contact-message section">
+    <div class="main-content intro-content-message">
+      <div class="intro-text-content">
+        <h2 class="letsGet">Let's get in touch!</h2>
+        <p class="ready">
+          Ready to start your next project with us? Send us a Gmail and we'll be in touch!
+        </p>
+      </div>
+      <div class="intro-img">
+        <img src="asserts/img/message_sent.svg" alt="Logo do send messaga" />
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend class="contactMe">Contact me</legend>
+          <div class="form-group">
+            <label class="yuorame" for="first-name">First-name</label>
+            <input class="yuorName" placeholder="Your first name" type="text" name="first-name" id="fisrt-nanme">
+          </div>
+
+          <div class="form-group">
+            <label class="last" for="last-name">Last-name</label>
+            <input class="last" placeholder="Your last name" type="text" name="last-name" id="last-nanme">
+          </div>
+
+          <div class="form-group">
+            <label class="email" for="email">E-mail</label>
+            <input class="email" placeholder="Your e-mail" type="email" name="email" id="email">
+          </div>
+
+          <div class="form-group foll-width">
+            <label class="msg" for="message">Message</label>
+            <textarea class="msg" placeholder="Your message" name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+          <div class="form-group foll-width">
+            <button class="send" type="submit">Send Message</button>
+          </div>
+
+        </fieldset>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer white-footer">
+    <p>Feito com <span class="heart">❤</span> por Leonardo Costa</p>
+  </footer>
 
   <a data-scroll-goto="0" class="top">TOP</a>
 

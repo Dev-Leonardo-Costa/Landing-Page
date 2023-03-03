@@ -14,6 +14,12 @@ const subWebTitle = document.querySelector('.subWebTitle');
 const subBiTitle = document.querySelector('.subBiTitle');
 const subApiTitle = document.querySelector('.subApiTitle');
 const fazemos = document.querySelector('.fazemos');
+const letsGet = document.querySelector('.letsGet');
+const ready = document.querySelector('.ready');
+const contactMe = document.querySelector('.contactMe');
+const yourName = document.querySelector('.yourName');
+
+
 
 
 
@@ -35,6 +41,12 @@ link.forEach(el => {
         subWebTitle.textContent = data[attr].subWebTitle;
         subBiTitle.textContent = data[attr].subBiTitle;
         subApiTitle.textContent = data[attr].subApiTitle;
+        ready.textContent = data[attr].ready;
+        letsGet.textContent = data[attr].letsGet;
+        contactMe.textContent = data[attr].contactMe;
+        yourName.textContent = data[attr].yourName;
+
+
     })
 });
 
@@ -56,6 +68,14 @@ var data = {
         "subWebTitle":"Aplicações web sob medida para o seu negócio",
         "subBiTitle":"Indicadores eficientes baseados nas melhores práticas de mercado",
         "subApiTitle":"APIs leves e de alto desempenho para transformar seus negócios",
+        "letsGet": "Vamos entrar em contato!",
+        "ready":"Pronto para começar seu próximo projeto conosco? Envie-nos um Gmail e entraremos em contato!",
+        "contactMe":"Contate me",
+        "yourName": "Nome",
+        "last": "Sobrenome",
+        "email": "Email",
+        "msg": "Mensagem",
+        "send": "Enviar Mensagem",
     },
     "EUA": {
         "logo": "logo",
@@ -75,6 +95,14 @@ var data = {
         "subWebTitle":"Tailor-made web applications for your business",
         "subBiTitle":"Efficient indicators based on best market practices",
         "subApiTitle":"Lightweight, high-performance APIs to transform your business",
-    }
+        "letsGet":"LET'S GET IN TOUCH!",
+        "ready":"Let's get in touch! Ready to start your next project with us? Send us a Gmail and we'll be in touch!",
+        "contactMe":"Contact me",
+        "yourName": "Name",
+        "last":"Last name",
+        "email":"E-mail",
+        "msg":"Message",
+        "send":"Send Message",
+    }   
 }
         
